@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cab_type: MyString
+  cab_no: MyString
+  rate: 1
+  insure: false
+
+two:
+  cab_type: MyString
+  cab_no: MyString
+  rate: 1
+  insure: false

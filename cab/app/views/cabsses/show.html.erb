@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cab type:</strong>
+  <%= @cabss.cab_type %>
+</p>
+
+<p>
+  <strong>Cab no:</strong>
+  <%= @cabss.cab_no %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @cabss.rate %>
+</p>
+
+<p>
+  <strong>Insure:</strong>
+  <%= @cabss.insure %>
+</p>
+
+<%= link_to 'Edit', edit_cabss_path(@cabss) %> |
+<%= link_to 'Back', cabsses_path %>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cabsses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cab type</th>
+      <th>Cab no</th>
+      <th>Rate</th>
+      <th>Insure</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cabsses.each do |cabss| %>
+      <tr>
+        <td><%= cabss.cab_type %></td>
+        <td><%= cabss.cab_no %></td>
+        <td><%= cabss.rate %></td>
+        <td><%= cabss.insure %></td>
+        <td><%= link_to 'Show', cabss %></td>
+        <td><%= link_to 'Edit', edit_cabss_path(cabss) %></td>
+        <td><%= link_to 'Destroy', cabss, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cabss', new_cabss_path %>
